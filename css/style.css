@@ -1,0 +1,456 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e6e6e9;
+    color: #060922;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-size: 1em;
+    line-height: 1.5625em;
+}
+
+body > * {
+    padding: 0.625em;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 100%;
+    flex: 1 100%;
+}
+
+nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /*position: relative;
+    max-width: 46em;
+    margin-left: .875rem;
+    margin-right: .875rem;*/
+}
+
+nav ul {
+    -webkit-padding-start: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+    /*padding: 0.1em 1em;
+    margin: 0.1em 0.5em;*/
+}
+
+a {
+    text-decoration: none;
+    color: #003082;
+    font-weight: 400;
+}
+
+.active {
+    border-bottom: 3px solid #003082;
+    font-weight: 600;
+}
+
+article {
+    padding: 2rem;
+    margin: 1em;
+    background-color: #fff;
+    box-shadow: 0 2px 0 0 rgba(7, 7, 33, .15);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    margin-top: 0;
+    color: #003082;
+    font-weight: 400;
+    font-size: 2.375rem;
+    line-height: 2.8125rem;
+}
+
+h2 {
+    margin-top: 0;
+    color: #003082;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 1.25em
+}
+
+.firstp::first-letter {
+    font-size: 2em;
+}
+
+#loginButton {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#loginButton img {
+    vertical-align: middle;
+    margin-right: 0.5em;
+    height: 2.4em;
+    width: 2.4em;
+}
+
+
+/* -------------- Login Modal --------------- */
+/*Bron: http://www.sevensignature.com/blog/code/pure-css-popup-without-javascript/*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-transition: opacity 500ms;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #FFC917;
+    width: 25em;
+    position: relative;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #003082;
+}
+
+.popup .close:hover {
+    color: #333;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+/* Inloggen */
+
+#login input[type="text"] {
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 1rem;
+    width: 100%;
+    vertical-align: top;
+    background-color: #FFF;
+    margin-bottom: 0;
+    text-indent: 0.425em;
+    padding: 0.2505em 0em;
+    border: 3px;
+    border-color: #fff;
+    margin-bottom: 0.5em;
+}
+
+#login input[type="text"]:focus {
+    outline: 0;
+}
+
+#login input[type="password"] {
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 1rem;
+    width: 100%;
+    vertical-align: top;
+    background-color: #FFF;
+    margin-bottom: 0;
+    text-indent: 0.425em;
+    padding: 0.2505em 0em;
+    border: 3px;
+    border-color: #fff;
+}
+
+#login input[type="password"]:focus {
+    outline: 0;
+}
+
+#login input[type="submit"] {
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    color: #fff;
+    font-weight: 400;
+    background-color: #0079d3;
+    /*margin-left: 1.75em;*/
+    margin-top: 1em;
+    padding: 0.8em 1.125em;
+    display:inline-block;
+    font-size: 1em;
+    border: none;
+    box-shadow: inset 0 -0.125em 0 #005ca0;
+    cursor: pointer;
+    float: right;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    transition: all 200ms ease;
+    }
+
+#login input[type="submit"]:hover {
+    /*background-color: #005ca0;*/
+    box-shadow: inset 0 -3.125em 0 #005ca0;
+}
+
+#login input[type="submit"]:focus {
+    outline: 0;
+}
+
+#login a {
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    margin-top: 1em;
+    color: #003082;
+    font-weight: 400;
+    background-color: #e6b517;
+    padding: 0.625em 1.125em;
+    display:inline-block;
+    font-size: 1em;
+    border: none;
+    box-shadow: 0 0.125em 0 #cfa317;
+    cursor: pointer;
+    }
+
+#login a:hover {
+    background-color: #cfa317;
+}
+
+#login a:focus {
+    outline: 0;
+}
+
+/* ZOEKEN */
+
+#zoeken {
+    background-color: #FFC917;
+}
+
+#zoeken select {
+    
+}
+
+#zoeken input {
+    
+}
+
+#zoeken span {
+    ;
+}
+
+/* ------------- Media Queries -------------- */
+
+@media screen and (max-width: 680px) {
+    #loginButton {
+        width: 70%;
+        order: 1;
+    }
+    
+    .popup {
+        width: 70%;
+    }
+    
+    nav ul {
+        order: 2;
+        
+    }
+    
+}
+
+/*----------------- FLEXBOX ------------------*/
+
+/*@media all and (min-width: 680px) {
+    nav {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 auto;
+        flex: 1 auto;
+    }
+}*/
+
+@media all and (min-width: 680px) {
+    main {
+        -webkit-box-flex: 3;
+        -ms-flex: 3 0;
+        flex: 3 0;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 4;
+        order: 4;
+        flex: 2 2 20em;
+    }
+    
+    nav {
+         -webkit-box-flex: 1;
+        -ms-flex: 1 auto;
+        flex: 1 auto;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        flex: 1 1 3em;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        padding: 0.455em 0.2em;
+        align-self: center;
+    }
+    
+    #loginButton {
+        align-self: center;
+    }
+    
+    #loginButton img {
+        height: 5em;
+        width: 5em;
+    }
+    
+    #zoeken {
+        flex: 1;
+        flex-direction: row;
+        order: 2;
+        
+    }
+    
+    footer {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 5;
+        order: 5;
+    }
+}
+
+@media all and (min-width: 1200px) {
+     main {
+        -webkit-box-flex: 3;
+        -ms-flex: 3 0px;
+        flex: 3 0;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    
+    nav {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+}
+
+/*------------------ PHONE -------------------*/
+
+
+/*Portrait*/
+
+@media (max-width: 680px) {
+    footer {
+        display: none;
+        visibility: hidden;
+    }
+    #slider {
+        display: none;
+        visibility: hidden;
+    }
+    #loginButton a p {
+        display: none;
+    }
+    #loginButton img {
+        vertical-align: middle;
+        margin-right: 0.5em;
+        height: 2.4em;
+        width: 2.4em;
+    }
+}
+
+
+/*------------------ TABLET ------------------*/
+
+
+/*Portrait*/
+
+@media (min-device-width: 680px) and (max-width: 1200px) {
+    footer {
+        display: none;
+        visibility: hidden;
+    }
+    
+    /*#loginButton img {
+        vertical-align: middle;
+        margin-right: 0.5em;
+        height: 5em;
+        width: 5em;
+    }*/
+}
+
+
+/*------------ LAPTOP / COMPUTER -------------*/
+
+@media (min-width: 1200px) {
+    footer {
+        background-color: red;
+    }
+    
+    article {
+        flex: 1 1 20em;
+    }
+    
+   /*#loginButton img {
+        vertical-align: middle;
+        margin-right: 0.5em;
+        height: 5em;
+        width: 5em;
+    }*/
+}
+}
