@@ -1,0 +1,373 @@
+nav #logo {
+    background-color: transparent;
+}
+
+header {
+    background-color: #fff;
+    padding: 1em 1.2em 0.8em 1.2em;
+    width: 100%;
+}
+
+article h2 {
+    padding: 0;
+}
+
+#deCock {
+    background-image: none;
+    background-image: none;
+}
+
+#deCock img[src="images/De-Cock-6-desktop.jpg"] {
+    display: none;
+    visibility: hidden;
+    max-width: 100%;
+}
+
+#deCock img[src="images/De-Cock-6-tablet.jpg"] {
+    display: none;
+    visibility: hidden;
+    max-width: 100%;
+}
+
+#deCock img[src="images/De-Cock-6-mobiel.jpg"] {
+    display: block;
+    visibility: initial;
+    max-width: 100%;
+}
+
+#neerslachtig {
+    background-image: none;
+    background-image: none;
+}
+
+#neerslachtig img[src="images/Neerslachtig-10-desktop.jpg"] {
+    display: none;
+    visibility: hidden;
+    max-width: 100%;
+}
+
+#neerslachtig img[src="images/Neerslachtig-10-tablet.jpg"] {
+    display: none;
+    visibility: hidden;
+    max-width: 100%;
+}
+    
+#neerslachtig img[src="images/Neerslachtig-10-mobiel.jpg"] {
+    display: block;
+    visibility: initial;
+    max-width: 100%;
+}
+
+#verliefd {
+    background-image: none;
+    background-image: none;
+}
+
+#verliefd img[src="images/Verliefd-5-desktop.jpg"] {
+    display: none;
+    visibility: hidden;
+    max-width: 100%;
+}
+
+#verliefd img[src="images/Verliefd-5-tablet.jpg"] {
+    display: none;
+    visibility: hidden;
+    max-width: 100%;
+}
+    
+#verliefd img[src="images/Verliefd-5-mobiel.jpg"] {
+    display: block;
+    visibility: initial;
+    max-width: 100%;
+}
+
+article {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 100%;
+}
+
+article header {
+    padding: 2em 2em 1.5em 2em;
+    max-height: 8.75em;
+    min-height: 0em;
+}
+
+article header h2 {
+    line-height: 1.4em;
+    box-sizing: border-box;
+    padding-right: 0;
+}
+
+#comments > div {
+    width: 100%;
+    padding: 0 2em 2em 2em;
+}
+
+#comments div > label {
+    font-weight: 700;
+    line-height: 2em;
+}
+
+#comments div > a {
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    color: #fff;
+    font-weight: 400;
+    background-color: #0079d3;
+    /*margin-left: 1.75em;*/
+    /*margin-top: 1em;*/
+    padding: 0.8em 1.125em;
+    display:inline-block;
+    font-size: 1em;
+    border: none;
+    box-shadow: inset 0 -0.125em 0 #005ca0;
+    cursor: pointer;
+    float: right;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+#comments div > a:hover {
+    box-shadow: inset 0 -3.125em 0 #005ca0;
+    background-color: #0079d3;
+}
+
+#comments div > a:focus {
+    outline: 0;
+}
+
+textarea {
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+    max-width: 100%;
+    font-size: 1em;
+    line-height: 1.5625em;
+    margin-bottom: 1em;
+}
+
+textarea:focus { 
+    outline: 0;
+}
+
+#comments footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    /*padding: 1em;*/
+}
+
+#comments footer div {
+    margin-left: auto;
+}
+
+#comments footer div img {
+    display: inline-block;
+    width: 1.5em;
+    margin-right: 0.2em;
+    vertical-align: middle;
+}
+
+#comments footer div p {
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+/*------------------ RATING ------------------*/
+
+
+.star-rating {
+  font-size: 0;
+  white-space: nowrap;
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+}
+.star-rating i {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  z-index: 1;
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+}
+.star-rating input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  opacity: 0;
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+}
+.star-rating input:hover + i,
+.star-rating input:checked + i {
+  opacity: 1;
+}
+.star-rating i ~ i {
+  width: 40%;
+}
+.star-rating i ~ i ~ i {
+  width: 60%;
+}
+.star-rating i ~ i ~ i ~ i {
+  width: 80%;
+}
+.star-rating i ~ i ~ i ~ i ~ i {
+  width: 100%;
+}
+.choice {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px;
+  display: block;
+}
+
+::after,
+::before {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+/*------------------ TABLET ------------------*/
+
+@media all and (min-width: 42.5em) {
+ 
+    #deCock img[src="images/De-Cock-6-desktop.jpg"] {
+        display: none;
+        visibility: hidden;
+        max-width: 100%;
+    }
+    
+    #deCock img[src="images/De-Cock-6-tablet.jpg"] {
+        display: block;
+        visibility: initial;
+        max-width: 100%;
+    }
+    
+    #deCock img[src="images/De-Cock-6-mobiel.jpg"] {
+        display: none;
+        visibility: hidden;
+        max-width: 100%;
+    }
+    
+    #neerslachtig img[src="images/Neerslachtig-10-desktop.jpg"] {
+        display: none;
+        visibility: hidden;
+        max-width: 100%;
+    }
+    
+    #neerslachtig img[src="images/Neerslachtig-10-tablet.jpg"] {
+        display: block;
+        visibility: initial;
+        max-width: 100%;
+    }
+    
+    #neerslachtig img[src="images/Neerslachtig-10-mobiel.jpg"] {
+        display: none;
+        visibility: hidden;
+        max-width: 100%;
+    }
+    
+    #verliefd img[src="Verliefd-5-desktop.jpg"] {
+        display: none;
+        visibility: hidden;
+        max-width: 100%;
+    }
+    
+    #verliefd img[src="images/Verliefd-5-tablet.jpg"] {
+        display: block;
+        visibility: initial;
+        max-width: 100%;
+    }
+    
+    #verliefd img[src="images/Verliefd-5-mobiel.jpg"] {
+        display: none;
+        visibility: hidden;
+        max-width: 100%;
+    }
+    
+}
+
+/*------------ LAPTOP / COMPUTER -------------*/
+
+@media (min-width: 75em) {
+    
+    #deCock img[src="images/De-Cock-6-desktop.jpg"] {
+        display: block;
+        visibility: initial;
+        max-width: 100%;
+    }
+    
+    #deCock img[src="images/De-Cock-6-tablet.jpg"] {
+        display: none;
+        visibility: hidden;
+        max-width: 100%;
+    }
+    
+    #deCock img[src="images/De-Cock-6-mobiel.jpg"] {
+        display: none;
+        visibility: hidden;
+        max-width: 100%;
+    }
+    
+    #neerslachtig img[src="images/Neerslachtig-10-desktop.jpg"] {
+        display: block;
+        visibility: initial;
+        max-width: 100%;
+    }
+    
+    #neerslachtig img[src="images/Neerslachtig-10-tablet.jpg"] {
+        display: none;
+        visibility: hidden;
+        max-width: 100%;
+    }
+    
+    #neerslachtig img[src="images/Neerslachtig-10-mobiel.jpg"] {
+        display: none;
+        visibility: hidden;
+        max-width: 100%;
+    }
+    
+    #verliefd img[src="images/Verliefd-5-desktop.jpg"] {
+        display: block;
+        visibility: initial;
+        max-width: 100%;
+    }
+    
+    #verliefd img[src="images/Verliefd-5-tablet.jpg"] {
+        display: none;
+        visibility: hidden;
+        max-width: 100%;
+    }
+    
+    #verliefd img[src="images/Verliefd-5-mobiel.jpg"] {
+        display: none;
+        visibility: hidden;
+        max-width: 100%;
+    }
+    
+}
