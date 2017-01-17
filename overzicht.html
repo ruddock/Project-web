@@ -7,123 +7,345 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Overzicht</title>
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
-    <header id='slider'>
-
-        <a href="#">Lees dit verhaal...</a>
-    </header>
-    <nav>
-
-        <ul>
-            <li><a href="#" class="active">Verhalen</a></li>
-            <li><a href="#">Favorieten</a></li>
-            <li><a href="#">Kinderen</a></li>
-        </ul>
-
-        <div id='loginButton'>
-            <a href="#popup1"><img src="images/user-klein.png" alt="profiel">
+    <header>
+        <a href="overzicht.html">
+            <img src="images/ns-logo.svg" alt="Nederlandse Spoorwegen">
+        </a>
+        <div class='loginButton'>
+            <a href="#popup2">
+                <img src="images/search.svg" alt="zoeken">
+            </a>
+            <a href="#popup1">
+                <img src="images/user.svg" alt="profiel">
                 <p>Inloggen</p>
             </a>
         </div>
-
+    </header>
+    <nav>
+        <div id='logo'>
+            <a href="overzicht.html">
+                <img src="images/ns-logo.svg" alt="Nederlandse Spoorwegen">
+            </a>
+        </div>
+        <div class='loginButton'>
+            <a href="#popup1">
+                <img src="images/user.svg" alt="profiel">
+                <p>Inloggen</p>
+            </a>
+        </div>
+        <ul>
+            <li><a href="#0" class="active">Verhalen</a></li>
+            <li><a href="#0">Favorieten</a></li>
+            <li><a href="#0">Kinderen</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id=search>
+            <header>
+                <h2>Altijd een verhaal voor onderweg</h2>
+            </header>
+            <form>
+                <label for="search">Zoeken:</label>
+                <input type="text" name="search" placeholder="Zoek een verhaal">
+                <div id="options" class="dropdown-options">
+                    <span>
+                        <span>
+                            <input type="checkbox" name="child" value="kinder verhalen">Verberg kinder verhalen.
+                        </span>
+                        <span>
+                            <input type="checkbox" name="explicit" value="expliciete content">Verberg expliciete content.
+                        </span>
+                    </span>
+                    <span>
+                        <label for="select">Sfeerwoord:</label>
+                        <select name="sfeerwoord">
+                            <option value="alle">Alle</option>
+                            <option value="avontuur">Avontuur</option>
+                            <option value="romantiek">Romantiek</option>
+                            <option value="natuur">Natuur</option>
+                            <option value="actie">Actie</option>
+                        </select>
+                    </span>
+                </div>
+            </form>
+            <footer>
+                <button onclick="searchFilters()" class="dropbtn">Geavanceerd zoeken</button>
+                <a href="#" type="text/html">Zoeken</a>
+            </footer>
+        </section>
+        <section>
+            <p>Sorteer op:</p> <a href="#" id="select">Beoordeling <img src="images/left-arrow-angle.svg"</a> <a href="#">Nieuw</a> <a href="#">Titel</a>
+        </section>
+        <article id="deCock">
+            <header></header>
+            <h2>Het raadsel van het verdwenen boek</h2>
+            <p>De Cock met C-O-C-K. stapte de bus uit. In de kruiwagen die De Cock voortduwde lag zijn trouwe kompaan Vledder zijn roes uit te slapen
+                <a href='decock.html'> ...Lees verder</a>
+            </p>
+            <footer>
+                <div>
+                    <svg version="1.1" class="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 25.6 21.6" style="enable-background:new 0 0 25.6 21.6;" xml:space="preserve">
+                        <path d="M25,4.4c-0.4-0.9-0.9-1.6-1.5-2.3c-0.7-0.7-1.4-1.2-2.3-1.5C20.3,0.2,19.4,0,18.4,0c-1,0-1.9,0.2-2.8,0.7
+                        c-0.9,0.4-1.6,1.1-2.3,1.8c-0.2,0.2-0.3,0.4-0.5,0.7c-0.2-0.2-0.3-0.4-0.5-0.7c-0.7-0.8-1.4-1.4-2.3-1.8C9.1,0.2,8.2,0,7.2,0
+                        c-1,0-1.9,0.2-2.8,0.6C3.5,0.9,2.8,1.5,2.1,2.1C1.5,2.8,0.9,3.5,0.6,4.4C0.2,5.3,0,6.2,0,7.2c0,1,0.2,1.9,0.6,2.8
+                        c0.4,0.9,0.9,1.6,1.5,2.3c0.7,0.6,9.8,8.9,10.7,9.3c0.9-0.4,10-8.7,10.7-9.3c0.6-0.7,1.2-1.4,1.5-2.3c0.4-0.9,0.6-1.8,0.6-2.8
+                        C25.6,6.2,25.4,5.3,25,4.4z" />
+                    </svg>
+                    <a href="file:///Users/robinvlietje/Documents/HvA/V1-05/Blok%202/website-v2/images/De-Cock-6-desktop.jpg">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="23 260.4 47.9 51.2" style="enable-background:new 23 260.4 47.9 51.2;" xml:space="preserve">
+                            <rect x="23" y="260.4" class="st0" width="47.9" height="51.2" />
+                            <rect x="23" y="260.4" class="st1" width="47.9" height="51.2" />
+                            <g>
+                                <rect x="23" y="260.4" class="st2" width="13.7" height="20.5" />
+                                <polygon class="st2" points="23,304.7 46.8,304.7 23,280.9 	" />
+                                <polygon class="st2" points="57.3,260.4 57.3,280.9 70.9,280.9 47.2,304.7 71,304.7 71,260.4 	" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <img src="images/star.svg" alt="rating">
+                    <p>4.5</p>
+                    <img src="images/chat.svg" alt="comments">
+                    <p>6</p>
+                </div>
+            </footer>
+        </article>
+        <article id="neerslachtig">
+            <header>
+            </header>
+            <h2>Neerslachtig</h2>
+            <p>Ach en wee, ik stap de bus uit. Mijn zoon – in wat voor wereld heb ik die jongen neergezet – ligt vredig in zijn wagentje te slapen
+                <a href='neerslachtig.html'> ...Lees verder</a>
+            </p>
+            <footer>
+                <div>
+                    <svg version="1.1" class="Laag_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 25.6 21.6" style="enable-background:new 0 0 25.6 21.6;" xml:space="preserve">
+                        <path d="M25,4.4c-0.4-0.9-0.9-1.6-1.5-2.3c-0.7-0.7-1.4-1.2-2.3-1.5C20.3,0.2,19.4,0,18.4,0c-1,0-1.9,0.2-2.8,0.7
+                        c-0.9,0.4-1.6,1.1-2.3,1.8c-0.2,0.2-0.3,0.4-0.5,0.7c-0.2-0.2-0.3-0.4-0.5-0.7c-0.7-0.8-1.4-1.4-2.3-1.8C9.1,0.2,8.2,0,7.2,0
+                        c-1,0-1.9,0.2-2.8,0.6C3.5,0.9,2.8,1.5,2.1,2.1C1.5,2.8,0.9,3.5,0.6,4.4C0.2,5.3,0,6.2,0,7.2c0,1,0.2,1.9,0.6,2.8
+                        c0.4,0.9,0.9,1.6,1.5,2.3c0.7,0.6,9.8,8.9,10.7,9.3c0.9-0.4,10-8.7,10.7-9.3c0.6-0.7,1.2-1.4,1.5-2.3c0.4-0.9,0.6-1.8,0.6-2.8
+                        C25.6,6.2,25.4,5.3,25,4.4z" />
+                    </svg>
+                    <a href="#">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="23 260.4 47.9 51.2" style="enable-background:new 23 260.4 47.9 51.2;" xml:space="preserve">
+                            <rect x="23" y="260.4" class="st0" width="47.9" height="51.2" />
+                            <rect x="23" y="260.4" class="st1" width="47.9" height="51.2" />
+                            <g>
+                                <rect x="23" y="260.4" class="st2" width="13.7" height="20.5" />
+                                <polygon class="st2" points="23,304.7 46.8,304.7 23,280.9 	" />
+                                <polygon class="st2" points="57.3,260.4 57.3,280.9 70.9,280.9 47.2,304.7 71,304.7 71,260.4 	" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <img src="images/star.svg" alt="rating">
+                    <p>4.2</p>
+                    <img src="images/chat.svg" alt="comments">
+                    <p>2</p>
+                </div>
+            </footer>
+        </article>
+        <article id="verliefd">
+            <header>
+            </header>
+            <h2>Verliefd</h2>
+            <p>Licht van mijn leven. Ik stapte vandaag bus 21 uit. Het was op het midden van de dag. En wat een heerlijke dag! Het was twaalf uur
+                <a href='verliefd.html'> ...Lees verder</a>
+            </p>
+            <footer>
+                <div>
+                    <svg version="1.1" class="Laag_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 25.6 21.6" style="enable-background:new 0 0 25.6 21.6;" xml:space="preserve">
+                        <path d="M25,4.4c-0.4-0.9-0.9-1.6-1.5-2.3c-0.7-0.7-1.4-1.2-2.3-1.5C20.3,0.2,19.4,0,18.4,0c-1,0-1.9,0.2-2.8,0.7
+                        c-0.9,0.4-1.6,1.1-2.3,1.8c-0.2,0.2-0.3,0.4-0.5,0.7c-0.2-0.2-0.3-0.4-0.5-0.7c-0.7-0.8-1.4-1.4-2.3-1.8C9.1,0.2,8.2,0,7.2,0
+                        c-1,0-1.9,0.2-2.8,0.6C3.5,0.9,2.8,1.5,2.1,2.1C1.5,2.8,0.9,3.5,0.6,4.4C0.2,5.3,0,6.2,0,7.2c0,1,0.2,1.9,0.6,2.8
+                        c0.4,0.9,0.9,1.6,1.5,2.3c0.7,0.6,9.8,8.9,10.7,9.3c0.9-0.4,10-8.7,10.7-9.3c0.6-0.7,1.2-1.4,1.5-2.3c0.4-0.9,0.6-1.8,0.6-2.8
+                        C25.6,6.2,25.4,5.3,25,4.4z" />
+                    </svg>
+                    <a href="#">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="23 260.4 47.9 51.2" style="enable-background:new 23 260.4 47.9 51.2;" xml:space="preserve">
+                            <rect x="23" y="260.4" class="st0" width="47.9" height="51.2" />
+                            <rect x="23" y="260.4" class="st1" width="47.9" height="51.2" />
+                            <g>
+                                <rect x="23" y="260.4" class="st2" width="13.7" height="20.5" />
+                                <polygon class="st2" points="23,304.7 46.8,304.7 23,280.9 	" />
+                                <polygon class="st2" points="57.3,260.4 57.3,280.9 70.9,280.9 47.2,304.7 71,304.7 71,260.4 	" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <img src="images/star.svg" alt="rating">
+                    <p>3.7</p>
+                    <img src="images/chat.svg" alt="comments">
+                    <p>9</p>
+                </div>
+            </footer>
+        </article>
+        <article class="story">
+            <header>
+            </header>
+            <h2>Alwetende verteller</h2>
+            <p>Kijk, daar gaat Max J. Molovich. Hij is net uit de bus gestapt en loopt nu achter een gifgroene kinderwagen waarin zijn zoon ligt te slapen
+                <a href='#0'> ...Lees verder</a>
+            </p>
+            <footer>
+                <div>
+                    <svg version="1.1" class="Laag_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 25.6 21.6" style="enable-background:new 0 0 25.6 21.6;" xml:space="preserve">
+                        <path d="M25,4.4c-0.4-0.9-0.9-1.6-1.5-2.3c-0.7-0.7-1.4-1.2-2.3-1.5C20.3,0.2,19.4,0,18.4,0c-1,0-1.9,0.2-2.8,0.7
+                        c-0.9,0.4-1.6,1.1-2.3,1.8c-0.2,0.2-0.3,0.4-0.5,0.7c-0.2-0.2-0.3-0.4-0.5-0.7c-0.7-0.8-1.4-1.4-2.3-1.8C9.1,0.2,8.2,0,7.2,0
+                        c-1,0-1.9,0.2-2.8,0.6C3.5,0.9,2.8,1.5,2.1,2.1C1.5,2.8,0.9,3.5,0.6,4.4C0.2,5.3,0,6.2,0,7.2c0,1,0.2,1.9,0.6,2.8
+                        c0.4,0.9,0.9,1.6,1.5,2.3c0.7,0.6,9.8,8.9,10.7,9.3c0.9-0.4,10-8.7,10.7-9.3c0.6-0.7,1.2-1.4,1.5-2.3c0.4-0.9,0.6-1.8,0.6-2.8
+                        C25.6,6.2,25.4,5.3,25,4.4z" />
+                    </svg>
+                    <a href="#0">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="23 260.4 47.9 51.2" style="enable-background:new 23 260.4 47.9 51.2;" xml:space="preserve">
+                            <rect x="23" y="260.4" class="st0" width="47.9" height="51.2" />
+                            <rect x="23" y="260.4" class="st1" width="47.9" height="51.2" />
+                            <g>
+                                <rect x="23" y="260.4" class="st2" width="13.7" height="20.5" />
+                                <polygon class="st2" points="23,304.7 46.8,304.7 23,280.9 	" />
+                                <polygon class="st2" points="57.3,260.4 57.3,280.9 70.9,280.9 47.2,304.7 71,304.7 71,260.4 	" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <img src="images/star.svg" alt="rating">
+                    <p>3.6</p>
+                    <img src="images/chat.svg" alt="comments">
+                    <p>12</p>
+                </div>
+            </footer>
+        </article>
+        <article class="story">
+            <header>
+            </header>
+            <h2>Beroemd</h2>
+            <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot
+                <a href='#0'> ...Lees verder</a>
+            </p>
+            <footer>
+                <div>
+                    <svg version="1.1" class="Laag_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 25.6 21.6" style="enable-background:new 0 0 25.6 21.6;" xml:space="preserve">
+                        <path d="M25,4.4c-0.4-0.9-0.9-1.6-1.5-2.3c-0.7-0.7-1.4-1.2-2.3-1.5C20.3,0.2,19.4,0,18.4,0c-1,0-1.9,0.2-2.8,0.7
+                        c-0.9,0.4-1.6,1.1-2.3,1.8c-0.2,0.2-0.3,0.4-0.5,0.7c-0.2-0.2-0.3-0.4-0.5-0.7c-0.7-0.8-1.4-1.4-2.3-1.8C9.1,0.2,8.2,0,7.2,0
+                        c-1,0-1.9,0.2-2.8,0.6C3.5,0.9,2.8,1.5,2.1,2.1C1.5,2.8,0.9,3.5,0.6,4.4C0.2,5.3,0,6.2,0,7.2c0,1,0.2,1.9,0.6,2.8
+                        c0.4,0.9,0.9,1.6,1.5,2.3c0.7,0.6,9.8,8.9,10.7,9.3c0.9-0.4,10-8.7,10.7-9.3c0.6-0.7,1.2-1.4,1.5-2.3c0.4-0.9,0.6-1.8,0.6-2.8
+                        C25.6,6.2,25.4,5.3,25,4.4z" />
+                    </svg>
+                    <a href="#0">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="23 260.4 47.9 51.2" style="enable-background:new 23 260.4 47.9 51.2;" xml:space="preserve">
+                            <rect x="23" y="260.4" class="st0" width="47.9" height="51.2" />
+                            <rect x="23" y="260.4" class="st1" width="47.9" height="51.2" />
+                            <g>
+                                <rect x="23" y="260.4" class="st2" width="13.7" height="20.5" />
+                                <polygon class="st2" points="23,304.7 46.8,304.7 23,280.9 	" />
+                                <polygon class="st2" points="57.3,260.4 57.3,280.9 70.9,280.9 47.2,304.7 71,304.7 71,260.4 	" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <img src="images/star.svg" alt="rating">
+                    <p>2.8</p>
+                    <img src="images/chat.svg" alt="comments">
+                    <p>5</p>
+                </div>
+            </footer>
+        </article>
+        <article class="story">
+            <header>
+            </header>
+            <h2>Klumperbeven</h2>
+            <p>Ik bus de stap uit en been met gepaste zwind over het stationsplein. In mijn zoon ligt de kinderwagen te slapen. Het pijpt regenstelen
+                <a href='#0'> ...Lees verder</a>
+            </p>
+            <footer>
+                <div>
+                    <svg version="1.1" class="Laag_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 25.6 21.6" style="enable-background:new 0 0 25.6 21.6;" xml:space="preserve">
+                        <path d="M25,4.4c-0.4-0.9-0.9-1.6-1.5-2.3c-0.7-0.7-1.4-1.2-2.3-1.5C20.3,0.2,19.4,0,18.4,0c-1,0-1.9,0.2-2.8,0.7
+                        c-0.9,0.4-1.6,1.1-2.3,1.8c-0.2,0.2-0.3,0.4-0.5,0.7c-0.2-0.2-0.3-0.4-0.5-0.7c-0.7-0.8-1.4-1.4-2.3-1.8C9.1,0.2,8.2,0,7.2,0
+                        c-1,0-1.9,0.2-2.8,0.6C3.5,0.9,2.8,1.5,2.1,2.1C1.5,2.8,0.9,3.5,0.6,4.4C0.2,5.3,0,6.2,0,7.2c0,1,0.2,1.9,0.6,2.8
+                        c0.4,0.9,0.9,1.6,1.5,2.3c0.7,0.6,9.8,8.9,10.7,9.3c0.9-0.4,10-8.7,10.7-9.3c0.6-0.7,1.2-1.4,1.5-2.3c0.4-0.9,0.6-1.8,0.6-2.8
+                        C25.6,6.2,25.4,5.3,25,4.4z" />
+                    </svg>
+                    <a href="#0">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="23 260.4 47.9 51.2" style="enable-background:new 23 260.4 47.9 51.2;" xml:space="preserve">
+                            <rect x="23" y="260.4" class="st0" width="47.9" height="51.2" />
+                            <rect x="23" y="260.4" class="st1" width="47.9" height="51.2" />
+                            <g>
+                                <rect x="23" y="260.4" class="st2" width="13.7" height="20.5" />
+                                <polygon class="st2" points="23,304.7 46.8,304.7 23,280.9 	" />
+                                <polygon class="st2" points="57.3,260.4 57.3,280.9 70.9,280.9 47.2,304.7 71,304.7 71,260.4 	" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <img src="images/star.svg" alt="rating">
+                    <p>2.1</p>
+                    <img src="images/chat.svg" alt="comments">
+                    <p>1</p>
+                </div>
+            </footer>
+        </article>
+    </main>
+    <footer>
+        <p>Robin van Vliet | V1-05</p>
         <div id="popup1" class="overlay">
-            <div class="popup">
+            <div>
                 <h2>Inloggen</h2>
                 <a class="close" href="#">&times;</a>
-                <form id='login'>
-                    <input type="text" name="email" placeholder="E-mail">
-                    
-                    <input type="password" name="wachtwoord" placeholder="Wachtwoord">
+                <form>
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email" placeholder="Uw e-mail">
+                    <label for="password">Wachtwoord:</label>
+                    <input type="password" name="password" placeholder="Uw wachtwoord">
                     <a href='#'>Registreren</a>
-                    <input type="submit" name="inloggen" value="Inloggen">
+                    <a href="#" type="text/html">Inloggen</a>
                 </form>
 
             </div>
         </div>
-
-    </nav>
-    <!--<form id='zoeken'>
-        <input type="text" name="zoeken" placeholder="Zoek een verhaal...">
-        <br />
-        <select name="genre">
-            <option value="genre">Kies genre</option>
-            <option value="avontuur">Avontuur</option>
-            <option value="romantiek">Romantiek</option>
-            <option value="natuur">Natuur</option>
-            <option value="actie">Actie</option>
-        </select>
-        <select name="auteur">
-            <option value="auteur">auteur</option>
-            <option value="joop">Joop</option>
-            <option value="niek">Niek</option>
-            <option value="evert">Evert</option>
-        </select>
-        
-        <span><input type="checkbox" name="verberg" value="Kinder verhalen">Verberg kinder verhalen.</span>
-        
-        <span><input type="checkbox" name="verberg" value="Expliciete content.">Verberg expliciete content.</span>
-        
-        <input type="range" id="resultRange" min="0" max="100" value="5" step="5">
-        
-        <select name="sorteren">
-            <option value="az">A t/m Z</option>
-            <option value="za">Z t/m A</option>
-            <option value="nieuw">Nieuw</option>
-            <option value="gelezen">Meest gelezen</option>
-        </select>
-        <button>Filters</button>
-        <input type="submit" name="zoeken" value="Zoeken">
-    </form> -->
-
-    <main>
-        <article>
-            <header>
-                <h2>Verhaal Title</h2></header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <footer></footer>
-        </article>
-
-        <article>
-            <header>
-                <h2>Verhaal Title</h2></header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <footer></footer>
-        </article>
-
-        <article>
-            <header>
-                <h2>Verhaal Title</h2></header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <footer></footer>
-        </article>
-
-        <article>
-            <header>
-                <h2>Verhaal Title</h2></header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <footer></footer>
-        </article>
-
-        <article>
-            <header>
-                <h2>Verhaal Title</h2></header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <footer></footer>
-        </article>
-        
-        <article>
-            <header>
-                <h2>Verhaal Title</h2></header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <footer></footer>
-        </article>
-
-    </main>
-
-    <footer>footer balblaaaa</footer>
+        <div id="popup2" class="overlay">
+            <div>
+                <h2>Overal snel een verhaal</h2>
+                <a class="close" href="#">&times;</a>
+                <form>
+                    <label for="search">Zoeken:</label>
+                    <input type="text" name="search" placeholder="Zoek een verhaal">
+                    <div id="mobileOptions" class="mobile-dropdown-options">
+                        <label for="select">Sfeerwoord:</label>
+                        <select name="sfeerwoord">
+                            <option value="alle">Alle</option>
+                            <option value="avontuur">Avontuur</option>
+                            <option value="romantiek">Romantiek</option>
+                            <option value="natuur">Natuur</option>
+                            <option value="actie">Actie</option>
+                        </select>
+                        <span>
+                            <input type="checkbox" name="child" value="kinder verhalen">
+                            <label for="child">Verberg kinder verhalen.</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="explicit" value="expliciete content">
+                            <label for="explicit">Verberg expliciete content.</label>
+                        </span>
+                    </div>
+                </form>
+                <button onclick="mobileFilters()" class="dropbtnMob">Geavanceerd zoeken</button>
+                <a href="#" type="text/html">Zoeken</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/search.js"></script>
+    <script src="js/favorites.js"></script>
 </body>
 
 </html>
