@@ -88,7 +88,7 @@
             </header>
             <div>
                 <label for="comment">Laat een reactie achter:</label>
-                <textarea name="comment" cols="40" rows="5" placeholder="..."></textarea>
+                <textarea name="comment" id="comment" cols="40" rows="5" placeholder="..."></textarea>
                 <span class="star-rating">
                         <input type="radio" name="rating" value="1"><i></i>
                         <input type="radio" name="rating" value="2"><i></i>
@@ -106,46 +106,53 @@
         <p>Robin van Vliet | V1-05</p>
         <div id="popup1" class="overlay">
             <div>
-                <h2>Inloggen</h2>
                 <a class="close" href="#">&times;</a>
                 <form>
-                    <label for="email">E-mail:</label>
-                    <input type="text" name="email" placeholder="Uw e-mail">
-                    <label for="password">Wachtwoord:</label>
-                    <input type="password" name="password" placeholder="Uw wachtwoord">
-                    <a href='#'>Registreren</a>
-                    <a href="#" type="text/html">Inloggen</a>
+                   <fieldset>
+                        <legend>Inloggen</legend>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Uw e-mail" required>
+                        <label for="password">Wachtwoord:</label>
+                        <input type="password" name="password" id="password" placeholder="Uw wachtwoord" required>
+                        <a href='#'>Registreren</a>
+                        <input type="submit" value="Inloggen" />
+                    </fieldset>
                 </form>
+
             </div>
         </div>
         <div id="popup2" class="overlay">
             <div>
-                <h2>Overal snel een verhaal</h2>
                 <a class="close" href="#">&times;</a>
                 <form>
-                    <label for="search">Zoeken:</label>
-                    <input type="text" name="search" placeholder="Zoek een verhaal">
-                    <div id="mobileOptions" class="mobile-dropdown-options">
-                        <label for="select">Sfeerwoord:</label>
-                        <select name="sfeerwoord">
-                            <option value="alle">Alle</option>
-                            <option value="avontuur">Avontuur</option>
-                            <option value="romantiek">Romantiek</option>
-                            <option value="natuur">Natuur</option>
-                            <option value="actie">Actie</option>
-                        </select>
-                        <span>
-                            <input type="checkbox" name="child" value="kinder verhalen">
-                            <label for="child">Verberg kinder verhalen.</label>
-                        </span>
-                        <span>
-                            <input type="checkbox" name="explicit" value="expliciete content">
-                            <label for="explicit">Verberg expliciete content.</label>
-                        </span>
-                    </div>
+                    <fieldset>
+                        <legend>Overal snel een verhaal</legend>
+                        <label for="search-small">Zoeken:</label>
+                        <input type="text" name="search-small" id="search-small" placeholder="Zoek een verhaal">
+                        <div id="mobileOptions" class="mobile-dropdown-options">
+                            <label for="select">Sfeerwoord:</label>
+                            <select name="select" id="select">
+                                <option value="alle">Alle</option>
+                                <option value="avontuur">Avontuur</option>
+                                <option value="romantiek">Romantiek</option>
+                                <option value="natuur">Natuur</option>
+                                <option value="actie">Actie</option>
+                            </select>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="child" id="child" value="kinder verhalen">
+                                    <label for="child">Verberg kinder verhalen.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="explicit" id="explicit" value="expliciete content">
+                                    <label for="explicit">Verberg expliciete content.</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <input type="submit" value="Zoeken" />
+                    </fieldset>
                 </form>
                 <button onclick="mobileFilters()" class="dropbtnMob">Geavanceerd zoeken</button>
-                <a href="#" type="text/html">Zoeken</a>
             </div>
         </div>
     </footer>

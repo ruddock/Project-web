@@ -43,46 +43,69 @@
             <li><a href="#0">Kinderen</a></li>
         </ul>
     </nav>
+    
     <main>
+       <div id="slidewrapper">
+           <div id="slide1">
+               <section>
+                   <header><h3>Uniek vormgegeven verhalen</h3></header>
+                   <p>Mooie verhalen voor onderweg, </br >nu altijd en overal beschikbaar.</p>
+                   <a href="#search-big" type="text/html">&#10095; &nbsp&nbsp Naar de verhalen</a>
+                   <footer></footer>
+               </section>
+           </div>
+        </div> 
         <section id=search>
-            <header>
-                <h2>Altijd een verhaal voor onderweg</h2>
-            </header>
+            <header></header>
             <form>
-                <label for="search">Zoeken:</label>
-                <input type="text" name="search" placeholder="Zoek een verhaal">
-                <div id="options" class="dropdown-options">
-                    <span>
+                <fieldset>
+                    <legend>Altijd een verhaal voor onderweg</legend>
+                    <label for="search-big">Zoeken:</label>
+                    <input type="text" name="search-big" id="search-big" placeholder="Zoek een verhaal" autofocus>
+                    <div id="options" class="dropdown-options">
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="child-big" id="child-big" value="kinder verhalen">
+                                <label for="child-big">Verberg kinder verhalen.</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="explicit-big" id="explicit-big" value="expliciete content">
+                                <label for="explicit-big">Verberg expliciete content.</label>
+                            </li>
+                        </ul>
                         <span>
-                            <input type="checkbox" name="child" value="kinder verhalen">Verberg kinder verhalen.
+                            <label for="select-big">Sfeerwoord:</label>
+                            <select name="select-big" id="select-big">
+                                <option value="alle">Alle</option>
+                                <option value="avontuur">Avontuur</option>
+                                <option value="romantiek">Romantiek</option>
+                                <option value="natuur">Natuur</option>
+                                <option value="actie">Actie</option>
+                            </select>
                         </span>
-                        <span>
-                            <input type="checkbox" name="explicit" value="expliciete content">Verberg expliciete content.
-                        </span>
-                    </span>
-                    <span>
-                        <label for="select">Sfeerwoord:</label>
-                        <select name="sfeerwoord">
-                            <option value="alle">Alle</option>
-                            <option value="avontuur">Avontuur</option>
-                            <option value="romantiek">Romantiek</option>
-                            <option value="natuur">Natuur</option>
-                            <option value="actie">Actie</option>
-                        </select>
-                    </span>
-                </div>
+                    </div>
+                    <input type="submit" value="Zoeken" />
+                </fieldset>
             </form>
-            <footer>
-                <button onclick="searchFilters()" class="dropbtn">Geavanceerd zoeken</button>
-                <a href="#" type="text/html">Zoeken</a>
-            </footer>
+            <button onclick="searchFilters()" class="dropbtn">Geavanceerd zoeken</button>
+            <footer></footer>
         </section>
+        <div id="mobile-slider">
+            <div id="slide2">
+               <section>
+                   <header><h3>Verhalen voor jong en oud</h3></header>
+                   <p>De leukste verhalen speciaal</br >geselecteerd voor de kleinste.</p>
+                   <a href="#0" type="text/html">Bekijk de kinderverhalen</a>
+                   <footer></footer>
+               </section>
+           </div>
+        </div>
         <section>
             <p>Sorteer op:</p> <a href="#" id="select">Beoordeling <img src="images/left-arrow-angle.svg"</a> <a href="#">Nieuw</a> <a href="#">Titel</a>
         </section>
         <article id="deCock">
             <header></header>
-            <h2>Het raadsel van het verdwenen boek</h2>
+            <h2><a href="decock.html">Het raadsel van het verdwenen boek</a></h2>
             <p>De Cock met C-O-C-K. stapte de bus uit. In de kruiwagen die De Cock voortduwde lag zijn trouwe kompaan Vledder zijn roes uit te slapen
                 <a href='decock.html'> ...Lees verder</a>
             </p>
@@ -118,8 +141,8 @@
         <article id="neerslachtig">
             <header>
             </header>
-            <h2>Neerslachtig</h2>
-            <p>Ach en wee, ik stap de bus uit. Mijn zoon – in wat voor wereld heb ik die jongen neergezet – ligt vredig in zijn wagentje te slapen
+            <h2><a href="neerslachtig.html">Neerslachtig</a></h2>
+            <p>Ach en wee, ik stap de bus uit. Mijn zoon – in wat voor wereld heb ik die jongen neergezet – ligt vredig in zijn wagentje te slapen maar dat
                 <a href='neerslachtig.html'> ...Lees verder</a>
             </p>
             <footer>
@@ -154,8 +177,8 @@
         <article id="verliefd">
             <header>
             </header>
-            <h2>Verliefd</h2>
-            <p>Licht van mijn leven. Ik stapte vandaag bus 21 uit. Het was op het midden van de dag. En wat een heerlijke dag! Het was twaalf uur
+            <h2><a href="verliefd.html">Verliefd</a></h2>
+            <p>Licht van mijn leven. Ik stapte vandaag bus 21 uit. Het was op het midden van de dag. En wat een heerlijke dag! Het was twaalf uur en
                 <a href='verliefd.html'> ...Lees verder</a>
             </p>
             <footer>
@@ -191,7 +214,7 @@
             <header>
             </header>
             <h2>Alwetende verteller</h2>
-            <p>Kijk, daar gaat Max J. Molovich. Hij is net uit de bus gestapt en loopt nu achter een gifgroene kinderwagen waarin zijn zoon ligt te slapen
+            <p>Kijk, daar gaat Max J. Molovich. Hij is net uit de bus gestapt en loopt nu achter een gifgroene kinderwagen waarin zijn zoon ligt te slapen en
                 <a href='#0'> ...Lees verder</a>
             </p>
             <footer>
@@ -263,7 +286,7 @@
             <header>
             </header>
             <h2>Klumperbeven</h2>
-            <p>Ik bus de stap uit en been met gepaste zwind over het stationsplein. In mijn zoon ligt de kinderwagen te slapen. Het pijpt regenstelen
+            <p>Ik bus de stap uit en been met gepaste zwind over het stationsplein. In mijn zoon ligt de kinderwagen te slapen. Het pijpt regenstelen en
                 <a href='#0'> ...Lees verder</a>
             </p>
             <footer>
@@ -300,47 +323,53 @@
         <p>Robin van Vliet | V1-05</p>
         <div id="popup1" class="overlay">
             <div>
-                <h2>Inloggen</h2>
                 <a class="close" href="#">&times;</a>
                 <form>
-                    <label for="email">E-mail:</label>
-                    <input type="text" name="email" placeholder="Uw e-mail">
-                    <label for="password">Wachtwoord:</label>
-                    <input type="password" name="password" placeholder="Uw wachtwoord">
-                    <a href='#'>Registreren</a>
-                    <a href="#" type="text/html">Inloggen</a>
+                   <fieldset>
+                        <legend>Inloggen</legend>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Uw e-mail" required>
+                        <label for="password">Wachtwoord:</label>
+                        <input type="password" name="password" id="password" placeholder="Uw wachtwoord" required>
+                        <a href='#'>Registreren</a>
+                        <input type="submit" value="Inloggen" />
+                    </fieldset>
                 </form>
 
             </div>
         </div>
         <div id="popup2" class="overlay">
             <div>
-                <h2>Overal snel een verhaal</h2>
                 <a class="close" href="#">&times;</a>
                 <form>
-                    <label for="search">Zoeken:</label>
-                    <input type="text" name="search" placeholder="Zoek een verhaal">
-                    <div id="mobileOptions" class="mobile-dropdown-options">
-                        <label for="select">Sfeerwoord:</label>
-                        <select name="sfeerwoord">
-                            <option value="alle">Alle</option>
-                            <option value="avontuur">Avontuur</option>
-                            <option value="romantiek">Romantiek</option>
-                            <option value="natuur">Natuur</option>
-                            <option value="actie">Actie</option>
-                        </select>
-                        <span>
-                            <input type="checkbox" name="child" value="kinder verhalen">
-                            <label for="child">Verberg kinder verhalen.</label>
-                        </span>
-                        <span>
-                            <input type="checkbox" name="explicit" value="expliciete content">
-                            <label for="explicit">Verberg expliciete content.</label>
-                        </span>
-                    </div>
+                    <fieldset>
+                        <legend>Overal snel een verhaal</legend>
+                        <label for="search-small">Zoeken:</label>
+                        <input type="text" name="search-small" id="search-small" placeholder="Zoek een verhaal">
+                        <div id="mobileOptions" class="mobile-dropdown-options">
+                            <label for="select">Sfeerwoord:</label>
+                            <select name="select" id="select">
+                                <option value="alle">Alle</option>
+                                <option value="avontuur">Avontuur</option>
+                                <option value="romantiek">Romantiek</option>
+                                <option value="natuur">Natuur</option>
+                                <option value="actie">Actie</option>
+                            </select>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="child" id="child" value="kinder verhalen">
+                                    <label for="child">Verberg kinder verhalen.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="explicit" id="explicit" value="expliciete content">
+                                    <label for="explicit">Verberg expliciete content.</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <input type="submit" value="Zoeken" />
+                    </fieldset>
                 </form>
                 <button onclick="mobileFilters()" class="dropbtnMob">Geavanceerd zoeken</button>
-                <a href="#" type="text/html">Zoeken</a>
             </div>
         </div>
     </footer>
