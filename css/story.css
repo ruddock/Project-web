@@ -63,19 +63,19 @@ article h2 {
     background-image: none;
 }
 
-#verliefd img[src="images/Verliefd-5-desktop.jpg"] {
+#verliefd img[src="images/Verliefd-5-desktop.png"] {
     display: none;
     visibility: hidden;
     max-width: 100%;
 }
 
-#verliefd img[src="images/Verliefd-5-tablet.jpg"] {
+#verliefd img[src="images/Verliefd-5-tablet.png"] {
     display: none;
     visibility: hidden;
     max-width: 100%;
 }
     
-#verliefd img[src="images/Verliefd-5-mobiel.jpg"] {
+#verliefd img[src="images/Verliefd-5-mobiel.png"] {
     display: block;
     visibility: initial;
     max-width: 100%;
@@ -148,7 +148,7 @@ textarea {
 }
 
 textarea:focus { 
-    outline: 0;
+    
 }
 
 #comments footer {
@@ -292,19 +292,19 @@ textarea:focus {
         max-width: 100%;
     }
     
-    #verliefd img[src="Verliefd-5-desktop.jpg"] {
+    #verliefd img[src="Verliefd-5-desktop.png"] {
         display: none;
         visibility: hidden;
         max-width: 100%;
     }
     
-    #verliefd img[src="images/Verliefd-5-tablet.jpg"] {
+    #verliefd img[src="images/Verliefd-5-tablet.png"] {
         display: block;
         visibility: initial;
         max-width: 100%;
     }
     
-    #verliefd img[src="images/Verliefd-5-mobiel.jpg"] {
+    #verliefd img[src="images/Verliefd-5-mobiel.png"] {
         display: none;
         visibility: hidden;
         max-width: 100%;
@@ -352,19 +352,19 @@ textarea:focus {
         max-width: 100%;
     }
     
-    #verliefd img[src="images/Verliefd-5-desktop.jpg"] {
+    #verliefd img[src="images/Verliefd-5-desktop.png"] {
         display: block;
         visibility: initial;
         max-width: 100%;
     }
     
-    #verliefd img[src="images/Verliefd-5-tablet.jpg"] {
+    #verliefd img[src="images/Verliefd-5-tablet.png"] {
         display: none;
         visibility: hidden;
         max-width: 100%;
     }
     
-    #verliefd img[src="images/Verliefd-5-mobiel.jpg"] {
+    #verliefd img[src="images/Verliefd-5-mobiel.png"] {
         display: none;
         visibility: hidden;
         max-width: 100%;
